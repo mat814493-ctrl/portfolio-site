@@ -1,0 +1,312 @@
+﻿/*やなかふぇ*/
+
+@charset "utf-8";
+
+*{	margin:0;	padding:0;}
+
+body{
+	background-image:url(img/bgimg.gif);
+	background-size:100%;
+	line-height:1.8;
+}
+
+header{
+	background-color:#f3f3f3;
+	width:100%;
+	position:fixed;
+	top:0px;
+	z-index:999;
+	opacity:0.9;
+}
+
+nav{
+	width:600px;
+	margin-left:auto;
+}
+
+.wrap{
+	z-index:2;
+	width:80%;
+	margin:auto;
+}
+
+ul{
+	list-style-type:none;
+}
+
+li{
+	float:left;
+}
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+nav li a,.bottan2 a{
+	display:block;
+	width:150px;
+	height:100px;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+a:hover,.bottan2 a:hover{
+	background-position:0 -100px;
+}
+
+.bottan1 a{
+	background-image:url(img/bottan1.png);
+}
+.bottan2 a{
+	background-image:url(img/bottan2.png);
+}
+.bottan3 a{
+	background-image:url(img/bottan3.png);
+}
+.bottan4 a{
+	background-image:url(img/bottan4.png);
+}
+
+img{
+	vertical-align:bottom;
+}
+#top img,.fbgi img{
+	width:100%;
+}
+#top{
+	background-image:url(img/image1.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100%;
+	text-align:center;
+}
+
+main{
+	text-align:center;
+	margin:30px;
+}
+
+.text{
+	margin:30px;
+}
+
+
+.f_box{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+}
+.f_box2{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+}
+
+
+.box1{
+	width:340px;
+}
+.center{
+	width:50%;
+	margin:auto;
+}
+
+/*スライドの枠*/
+.homegallery{
+	width:100%;
+	max-width:95%;
+	margin:auto;
+	overflow:hidden;
+}
+
+.slider{
+	display:flex;
+	width:600%;/*画像6枚分(100%×6枚)*/
+	animation:slide-show 25s infinite;/*25秒で1ループ*/
+}
+
+.slider img{
+	width:16.667%;/*全体の6分の1（1枚分）*/
+}
+/*スライド*/
+@keyframes slide-show {
+	0%{ transform: translateX(0); }
+	16.667%{	transform:translateX(-16.667%);	}/*2枚目へ*/
+	33.334%{	transform:translateX(-33.334%);	}/*3枚目へ*/
+	50.001%{	transform:translateX(-50.001%);	}/*4枚目へ*/
+	66.668%{	transform:translateX(-66.668%);	}/*5枚目へ*/
+	83.335%{	transform:translateX(-83.335%);	}/*6枚目へ*/
+	100%{	transform:translateX(-83.335%);	}/*1枚目へ*/
+}
+
+.homegallery{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.homegallery li{
+	width:20%;
+}
+
+.shop_map{
+	text-align:center;
+}
+.shop_map iframe{
+	width:90%;
+	height:460px;
+}
+
+.fbgi{
+	background-image:url(img/image1.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:100%;
+	background-attachment:fixed;
+	text-align:center;
+}
+
+.shop{
+	width:75%;
+	margin:auto;
+}
+
+.box2{
+	margin:30px 20px 30px;
+}
+.pd{
+	padding-left:50px;
+}
+
+.modoru{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+}
+
+.modoru a{
+	display:block;
+	width:131px;
+	height:115px;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	background-image:url(img/modorubottan.png);
+}
+.modoru a:hover{
+	background-position:0 -115px;
+}
+
+.copy{
+	text-align:center;
+	background-color:#000;
+	color:#fff;
+	font-weight:bold;
+	font-size:12px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.pd_t{
+	padding-top:100px;
+}
+
+h2{
+	font-size:40px;
+	margin:30px;
+}
+h3,h4{
+	font-size:30px;
+	margin:30px;
+}
+
+/*--801px以上--*/
+#menu-btn-check,.menu-btn{
+	display:none;
+}
+
+/*--800px以下--*/
+
+@media screen and (max-width: 800px)
+{
+/*チェックボックスは常に非表示*/
+#menu-btn-check{	display:none;}
+
+/*ハンバーガーボタン*/
+.menu-btn{
+	display:flex;
+	height:100px;
+	width:100px;
+	justify-content:center;
+	align-items:center;
+	cursor:pointer;
+	z-index:100;
+	background-color:#4CAF50;
+	float:right;
+}
+.menu-btn span,.menu-btn span:before,.menu-btn span:after{
+	content:'';
+	display:block;
+	height:2px;
+	width:25px;
+	border-radius:2px;
+	background-color:#fff;
+	position:absolute;
+	transition:all 0.3s;
+}
+.menu-btn span:before{bottom:8px;}
+.menu-btn span:after{top:8px;}
+
+/*チェックが入ったら三本線を×にする*/
+#menu-btn-check:checked~.menu-btn span{
+	background-color:rgba(255,255,255,0);}
+#menu-btn-check:checked~.menu-btn span:before{
+	bottom:0;
+	transform:rotate(45deg);}
+#menu-btn-check:checked~.menu-btn span:after{
+	top:0;
+	transform:rotate(-45deg);}
+
+/*メニュー本体の表示・非表示*/
+nav{
+	display:none;
+	width:100%;
+	background-color:#fff;
+	position:absolute;
+	top:100px;
+	left:0;
+}
+
+/*チェックが入ったらメニューを表示*/
+#menu-btn-check:checked~nav{
+	display:block;
+}
+
+/*メニュー内のリストを縦並びに*/
+	nav ul{
+	flex-direction:column;
+	width:150px;
+	margin-left:auto;
+}
+nav li{
+	float:none;
+	width:100%;
+	border-bottom:1px solid #eee;
+}
+
+body{
+	text-align:center;
+}
+
+.f_box{
+	display:block;
+}
+
+.shop_map iframe{
+	height:300px;
+}
+
+}

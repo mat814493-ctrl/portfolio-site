@@ -1,0 +1,56 @@
+﻿/*abc水族館*/
+
+@charset "utf-8";
+
+*{	padding:0;	margin:0;}
+
+.wrapper{
+	width:900px;
+	margin:auto;
+	background-color:#b9b6e5;
+	color:#fff;
+}
+
+img{
+	vertical-align:bottom;
+}
+
+ul{
+	list-style-type:none;
+}
+.f_box{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.f_box2{
+	display:flex;
+	align-items:center;
+	width:80%;
+	margin:auto;
+	padding:60px 20px 20px;
+}
+
+.f_box2 li{
+	width:25%;
+	text-align:center;
+}
+.bdr{
+	border-right:solid 2px #000;
+}
+
+footer{
+	font-size:12px;
+	text-align:center;
+	padding:10px;
+}
+
+
+/*
+#fff（白） #000（黒） #ddd(灰色) 
+#00f（青） #0f0（緑） #f00（赤） 
+#ff0（黄） #0ff(水色) #f0f（薄紫） 
+#f39（ビビットピンク）
+*/
+
