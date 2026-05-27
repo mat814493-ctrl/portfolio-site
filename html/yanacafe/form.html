@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 
-<title>店舗情報 | やなかふぇ</title>
+<title>窓口 | やなかふぇ</title>
 <link href="common.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -40,74 +40,24 @@
   <img src="img/mini.gif" alt="ロゴ">
   </p>
 
-  <h2>店舗情報</h2>
+  <h2>窓口</h2>
 
 	</div>
 
-<section class="shop">
+<form method="POST" action="sample.cgi">
+  <p>お名前：<input type="text" name="NAME"></p>
+  <p>メールアドレス：<input type="text" name="email"></p>
+  <p>お電話番号：<input type="text" name="TEL"></p>
+  <p>ご用件：<textarea rows="6" cols="50"placeholder="ここにメッセージを入力してください"></textarea></p>
+  <p><input type="submit" value="送信する"></p>
+  <p><input type="reset" value="取消する"></p>
+</form>
 
-	<div class="f_box">
-
-  <h3 class="box2"><img src="img/rogo200.png" alt="ロゴ"></h3>
-
-  <div class="box2">
-
- <table>
-  <tr>
-    <th>住所</th>
-    <td>岐阜県本巣市神海87-310</td>
-  </tr>
-
-  <tr>
-    <th>TEL</th>
-    <td>0581-87-3100</td>
-  </tr>
-
-  <tr>
-    <th>営業時間</th>
-    <td>11:00 - 19:30 (L.O 18:30)<br/>
-        ※水曜日定休日</td>
-  </tr>
-
-  <tr>
-    <th>駐車場</th>
-    <td>50台</td>
-  </tr>
- </table>
-
- <p>※送迎バスあり(10名以上、要相談)</p>
-
- </div><!--.box2-->
-
- <p class="box2">
-<img src="img/image1s.png" alt="外観"></p>
-
-	</div><!--.f_box-->
-
-</section>
-
-	<div class="f_box">
-<p><img src="img/image2.png" alt="内装"></p>
-<p><img src="img/image5.png" alt="川"></p>
-	</div><!--.f_box-->
-
-<div class="shop_map">
-
-<h3>店舗情報</h3>
-
- <p>
-【お車でお越しの方】<br/>
-岐阜各務原ICから約1時間。岐阜羽島ICから約50分。モレラ岐阜から北へ車で15分<br/>
-【電車でお越しの方】<br/>
-(JR東海道本線)名古屋駅→大垣駅→(樽見鉄道)神海駅下車 徒歩約10分<br/>
-(JR東海道本線)米原駅→大垣駅→(樽見鉄道)神海駅下車 徒歩約10分
- </p>
-
-<!--マップをここに入れる-->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.6385112930757!2d136.6409587!3d35.5379298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60024e67dcaaa8ed%3A0x6cd5364b133519e9!2z6a6O5paZ55CGIOOChOOBquW3nQ!5e0!3m2!1sja!2sjp!4v1776234415418!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-</div><!--shop_map-->
-
+<p class="form_t">※ご予約のお客様は下記の内容を「ご用件」にご入力頂けますようよろしくお願いいたします。<br>
+（ご予約日　※年からお書きいただければ幸いです。<br>
+　人数　　　※2日前までのキャンセルでキャンセル料有料<br>
+　時間）
+</p>
 
 	</div><!--.wrap-->
 

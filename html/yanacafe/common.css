@@ -20,7 +20,7 @@ header{
 }
 
 nav{
-	width:600px;
+	width:750px;
 	margin-left:auto;
 }
 
@@ -66,6 +66,9 @@ a:hover,.bottan2 a:hover{
 }
 .bottan4 a{
 	background-image:url(img/bottan4.png);
+}
+.bottan5 a{
+	background-image:url(img/bottan5.png);
 }
 
 img{
@@ -180,6 +183,16 @@ main{
 .pd{
 	padding-left:50px;
 }
+
+form,.form_t{
+	width:40%;
+	margin:50px auto;
+	text-align:center;
+}
+textarea{
+	resize:none;
+}
+
 
 .modoru{
 	position:fixed;

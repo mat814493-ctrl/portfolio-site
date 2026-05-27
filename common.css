@@ -1,66 +1,138 @@
+/*CSS PORTFOLIO*/
 @charset "utf-8";
-/*CSS ポートフォリオ*/
 
 *{	margin:0px;	padding: 0px;}
 
 body{
-	font-size:16px;
-	color:#000;
-	background-color:#FFF;
+	text-align:center;
+}
+
+header{
+	background-image:url("img/header_bd.png");
+	background-size:100%;
+	width:100%;
+	height:0;
+	padding-top:55.556%;
+	position:relative;
+	z-index:999;
+}
+h1{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	color:#FFF;
+	font-size: 150%;
+	text-shadow: 5px 5px 5px #bbb;
 }
 
 .wrapper{
+	width:95%;
 	margin:auto;
-	width:1200px;
-	text-align:center;
 }
 
-h1{
-	text-align:center;
-	padding-top:10px;
-	padding-bottom:10px;
-}
-
-.f_box{
-	display:flex;
-	justify-content:space-around;
-	align-items:center;
-}
 ul{
 	list-style-type:none;
-	width:60%;
+	width:50%;
 	margin:auto;
+	margin-top:3%;
 }
 li{
 	text-align:center;
 	float:left;
-	width:50%;
-	padding-top:10px;
-	padding-bottom:10px;
+	width:45%;
+	font-size:130%;
+	border-bottom:solid 1px #555;
+	margin-right:5%;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
 }
 
+nav a {
+	text-decoration: none;
+	color: #555;
+}
+nav a:hover {
+	opacity: 0.8;
+}
+
+
 h2{
+	font-size:150%;
 	text-align:center;
-	padding-top:10px;
-	padding-bottom:10px;
+	padding-top:5%;
+	padding-bottom:5%;
+}
+
+.f_box{
+	width:84%;
+	margin:auto;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items:flex-start;
+	margin-bottom:3%;
+}
+
+.box img,.box2 img,.box3 img{
+	width:90%;
+	margin:10% auto;
 }
 
 .box{
 	background-color:#999;
-	height:580px;
-	width:30%;
+	width:28%;
+/*	height:760PX;*/
+}
+.box2{
+	background-color:#999;
+	width:28%;
+/*	height:700PX;*/
+}
+.box3{
+	background-color:#999;
+	width:28%;
+/*	height:770PX;*/
 }
 
-th{	width:35%;}
-tb{	width:65%;}
+h3{	padding:5%;}
 
-.m20{
-	margin:20px;
+table{
+	width:90%;
+	margin:auto;
+	border-collapse:separate;
+	border-spacing:0 15px;
+}
+th{	width:30%;}
+tb{	width:60%;}
+
+.mr10{
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+.back{
+	width:10%;
+	text-align:center;
+	background-color:#aaa;
+	padding:1%;
+	position:fixed;
+	right:2%;
+	bottom:5%;
+}
+.back a{
+	color:#fff;
+	text-decoration:none;
 }
 
 footer p{
 	color:#999;
 	text-align:center;
-	padding-top:10px;
-	padding-bottom:10px;
+	padding-top:2%;
+	padding-bottom:3%;
 }
