@@ -1,0 +1,134 @@
+﻿/*ジンギスカン*/
+
+@charset "utf-8";
+
+*{	margin:0;	padding:0;}
+
+body{
+	font-size:20px;
+	line-height:1.7;
+	background-color:#000000;
+	color:#FFFFFF;
+}
+
+.wrap{
+	width:80%;
+	margin:auto;
+	text-align:center;
+}
+
+img{
+	vertical-align:bottom;
+}
+#top img{
+	width:100%;
+}
+
+#top{
+	margin-bottom:5%;
+}
+
+.fbox{
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+}
+
+ul{
+	list-style-type:none;
+}
+
+ol{
+	list-style-position:inside;
+	width:52%;
+	margin:auto;
+	text-align:left;
+}
+.fbox2{
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+}
+
+.box{
+	width:35%;
+}
+
+table{
+	width:30%;
+	margin:auto;
+}
+
+.mg{
+	margin:3%;
+}
+.pd{
+	padding:1%;
+}
+.pd10{
+	padding-left:10%;
+	padding-right:10%;
+}
+
+.modoru{
+	text-align:center;
+	line-height:1.0;
+	background-color:#333;
+	width:60px;
+	position:fixed;
+	right:2%;
+	bottom:5%;
+	padding:0.5%;
+}
+.modoru a{
+	color:#ddd;
+	text-decoration:none;
+}
+.modoru a:hover{
+	color:#0ff;
+}
+
+.copy{
+	background-color:#333;
+	text-align:center;
+	font-size:14px;
+	color:#ddd;
+	font-weight:bold;
+}
+
+
+@media screen and (max-width:800px)
+{
+
+.wrap{
+	width:100%;
+}
+
+ol{
+	width:80%;
+}
+
+.fbox2{
+	display:block;
+}
+.box{
+	width:100%;
+	padding:2%;
+}
+
+table{
+	width:80%;
+}
+
+}
+
+
+/*
+#fff（白） #000（黒） #ddd(灰色) 
+#00f（青） #0f0（緑） #f00（赤） 
+#ff0（黄） #0ff(水色) #f0f（薄紫） 
+#f39（ビビットピンク）
+*/
+

@@ -79,7 +79,14 @@ h2{
 	margin-bottom:3%;
 }
 
-.box img,.box2 img,.box3 img{
+.i_box{
+	width:100%;
+	height:300px;
+	overflow:auto;
+	scrollbar-width:none;
+}
+
+.box img{
 	width:90%;
 	margin:10% auto;
 }
@@ -89,16 +96,19 @@ h2{
 	width:28%;
 /*	height:760PX;*/
 }
+
+/*
 .box2{
 	background-color:#999;
 	width:28%;
-/*	height:700PX;*/
+	height:700PX;
 }
 .box3{
 	background-color:#999;
 	width:28%;
-/*	height:770PX;*/
+	height:770PX;
 }
+*/
 
 h3{	padding:5%;}
 
