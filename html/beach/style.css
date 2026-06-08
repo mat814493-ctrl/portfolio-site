@@ -1,0 +1,112 @@
+﻿/*ビーチ満足度*/
+
+@charset "utf-8";
+
+*{	margin:0;	padding:0;}
+
+body{
+	background-image:url(img/body_bg.png);
+}
+
+.wrap{
+	width:1000px;
+	margin:10px auto;
+	background-color:#fff;
+	box-shadow:0 0 5px 5px #999;
+}
+
+h1{
+	font-size:26px;
+	color:#191970;
+	text-align:center;
+	background-image:url(img/h_bg.jpg);
+	height:40px;
+}
+
+img{
+	width:100%;
+	vertical-align:bottom;
+}
+
+header p{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+h2{
+	font-size:26px;
+	color:#006400;
+	background-image:url(img/h_bg.jpg);
+	height:40px;
+	padding-left:20px;
+	margin-bottom:50px;
+}
+
+ul{
+	list-style-type:none;
+	margin:50px auto;
+	width:930px;
+
+/*答え
+	margin-bottom:50px;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+*/
+}
+
+li a{
+	display:block;
+	width:300px;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-decoration:none;
+	color:#fff;
+}
+
+li{
+	font-size:20px;
+	text-align:center;
+	background-color:#191970;
+	margin-left:5px;
+	margin-right:5px;
+
+	float:left;
+}
+
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.flexbox{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+	margin-bottom:50px;
+}
+
+.text{
+	width:460px;
+}
+
+.modoru{
+	width:100px;
+	background-color:#00bfff;
+	padding:10px;
+	border-radius:10px;
+	margin-right:20px;
+	margin-bottom:20px;
+	margin-left:auto;
+}
+
+/*
+#fff（白） #000（黒） #ddd(灰色) 
+#00f（青） #0f0（緑） #f00（赤） 
+#ff0（黄） #0ff(水色) #f0f（薄紫） 
+#f39（ビビットピンク）
+*/
+
