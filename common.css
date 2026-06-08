@@ -19,10 +19,17 @@ header{
 h1{
 	position: absolute;
 	top: 40%;
-	left: 50%;
+	right:15%;
 	color:#FFF;
 	font-size: 150%;
 	text-shadow: 5px 5px 5px #bbb;
+}
+.mytext{
+	position: absolute;
+	top:48%;
+	right:15%;
+	color:#FFF;
+	text-align:right;
 }
 
 .wrapper{
@@ -30,21 +37,25 @@ h1{
 	margin:auto;
 }
 
-ul{
-	list-style-type:none;
-	width:50%;
+nav{
+	width:80%;
 	margin:auto;
 	margin-top:3%;
+}
+ul{
+	list-style-type:none;
 }
 li{
 	text-align:center;
 	float:left;
-	width:45%;
+	width:30%;
 	font-size:130%;
 	border-bottom:solid 1px #555;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+.mg_r{
 	margin-right:5%;
-	padding-top:2%;
-	padding-bottom:2%;
 }
 .clearfix:after{
 	content:"";
@@ -64,12 +75,12 @@ nav a:hover {
 h2{
 	font-size:150%;
 	text-align:center;
-	padding-top:5%;
-	padding-bottom:5%;
+	padding-top:3%;
+	padding-bottom:3%;
 }
 
 .f_box{
-	width:84%;
+	width:90%;
 	margin:auto;
 	display:flex;
 	flex-direction:row;
@@ -88,29 +99,17 @@ h2{
 
 .box img{
 	width:90%;
-	margin:10% auto;
+	margin:auto;
 }
 
 .box{
 	background-color:#999;
-	width:28%;
+	width:30%;
+	padding-top:3%;
 /*	height:760PX;*/
 }
 
-/*
-.box2{
-	background-color:#999;
-	width:28%;
-	height:700PX;
-}
-.box3{
-	background-color:#999;
-	width:28%;
-	height:770PX;
-}
-*/
-
-h3{	padding:5%;}
+h3{	padding:3%;}
 
 table{
 	width:90%;
@@ -121,13 +120,13 @@ table{
 th{	width:30%;}
 tb{	width:60%;}
 
-.mr10{
+.mr{
 	margin-top:5%;
 	margin-bottom:5%;
 }
 
 .back{
-	width:10%;
+	width:50px;
 	text-align:center;
 	background-color:#aaa;
 	padding:1%;
@@ -140,9 +139,88 @@ tb{	width:60%;}
 	text-decoration:none;
 }
 
-footer p{
-	color:#999;
+.prof{
+	text-align:left;
+	width:42%;
+	margin:auto;
+}
+h4{
+	padding:0.3%;
+}
+
+footer{
+	background-image:url("img/header_bd.png");
+	color:#eee;
 	text-align:center;
-	padding-top:2%;
-	padding-bottom:3%;
+	font-size:12px;
+	font-weight:bold;
+	padding-top:0.5%;
+	padding-bottom:0.5%;
+	margin-top:3%
+}
+
+@media screen and (max-width: 700px)
+{
+
+h1{
+	top: 35%;
+}
+.mytext{
+	top: 50%;
+}
+
+.wrapper{
+	width:100%;
+}
+
+nav{
+	width:100%;
+	margin-top:5%;
+	margin-bottom:5%;	
+}
+
+nav a {
+	text-decoration: none;
+	color: #608;
+}
+nav a:hover {
+	opacity: 0.5;
+}
+
+h2{
+	padding-bottom:5%;
+}
+
+.f_box{
+	width:100%;
+	display:block;
+	margin-bottom:5%;
+}
+
+.box img{
+	width:80%;
+	margin:auto;
+}
+
+.box{
+	width:100%;
+	padding-top:5%;
+/*	height:760PX;*/
+}
+
+.prof{
+	width:80%;
+}
+
+.back{
+	font-size:14px;
+	width:45px;
+	right:1%;
+	bottom:3%;
+}
+
+footer{
+	margin-top:5%
+}
+
 }
